@@ -1,0 +1,26 @@
+.download-item {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.download-tooltip-wrap {
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .download-tooltip-content {
+        display: flex;
+        gap: .5rem;
+        flex-direction: column;
+        align-items: flex-start;
+        max-height: min(10rem, 50dvh);
+        overflow: auto;
+    }
+}

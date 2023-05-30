@@ -1,0 +1,33 @@
+@import '../../assets/sass/mixins';
+
+.setting-form {
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        box-sizing: border-box;
+        padding: .5rem;
+    }
+
+    .wrapper {
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        &__footer {
+            display: flex;
+            gap: 1rem;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+
+    &-field {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

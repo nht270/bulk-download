@@ -1,0 +1,20 @@
+@import 'colors';
+@import 'variables';
+
+%scrollBarStyle {
+    &::-webkit-scrollbar {
+        height: 15px;
+        width: 15px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border: 5px solid transparent;
+        background-clip: padding-box;
+        background-color: $neutral-300;
+        border-radius: $border-rounded-0;
+
+        &:hover {
+            background-color: $neutral-400;
+        }
+    }
+}

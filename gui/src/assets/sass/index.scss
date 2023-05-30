@@ -1,0 +1,37 @@
+@import './mixins';
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.screen-wrapper {
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+.vertical-flex {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.horizotal-flex {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+
+.break-work {
+    word-wrap: break-word;
+}
+
+.app-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+* {
+    @extend %scrollBarStyle;
+}

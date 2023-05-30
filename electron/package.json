@@ -1,0 +1,32 @@
+{
+  "name": "bulk-downoad-electron",
+  "version": "1.0.0",
+  "description": "A bulk downloader",
+  "main": "./dist/main.js",
+  "scripts": {
+    "start": "electron ./dist/main.js",
+    "dev": "tsc && electron .",
+    "build": "tsc",
+    "forge:start": "electron-forge start",
+    "forge:package": "electron-forge package",
+    "forge:make": "electron-forge make",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "author": "nht270",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.1.1",
+    "@electron-forge/maker-deb": "^6.1.1",
+    "@electron-forge/maker-rpm": "^6.1.1",
+    "@electron-forge/maker-squirrel": "^6.1.1",
+    "@electron-forge/maker-zip": "^6.1.1",
+    "electron": "^24.3.0"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "sanitize-filename": "^1.6.3",
+    "sequelize": "^6.31.1",
+    "sqlite3": "^5.1.6"
+  }
+}

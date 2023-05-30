@@ -1,0 +1,7 @@
+electron/dist
+electron/gui
+electron/node_modules
+electron/db.sqlite
+electron/app.config.json
+gui/dist
+gui/node_modules

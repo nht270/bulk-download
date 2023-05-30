@@ -1,0 +1,42 @@
+.title-bar {
+    $title-bar-height: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    height: $title-bar-height;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+
+    &__title {
+        display: flex;
+        gap: .2rem;
+        align-items: center;
+        height: $title-bar-height;
+        margin: 0 .2rem;
+    }
+
+    &__button-wrap {
+        height: $title-bar-height;
+        $button-width: 2rem;
+        display: flex;
+        gap: .2rem;
+        align-items: center;
+
+        .custom-button-wrap {
+            display: flex;
+            gap: .2rem;
+            align-items: center;
+        }
+
+        .default-button-wrap {
+            $button-count: 3;
+            width: calc($button-width * $button-count);
+        }
+    }
+
+    .draggable {
+        -webkit-app-region: drag;
+        height: $title-bar-height;
+        flex-grow: 1;
+    }
+}
