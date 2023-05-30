@@ -1,3 +1,7 @@
+### Description
+A downloader to bulk download files by link list (json array or links separated by break line).
+Recommend for small files as image, audio
+
 ### Run guide
 
 Install packages in 'electron' and 'gui' folder, then run 'npm run dev' at both to run
