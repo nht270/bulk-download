@@ -1,8 +1,8 @@
 import crypto from 'node:crypto'
 import { EventEmitter } from 'node:events'
 import fs from 'node:fs'
-import http, { IncomingMessage } from 'node:http'
-import https from 'node:https'
+import { IncomingMessage, RequestOptions } from 'node:http'
+import { http, https } from 'follow-redirects'
 import path from 'node:path'
 import sanitize from 'sanitize-filename'
 import UnitUtil from './unitUtil'
@@ -146,7 +146,7 @@ export default class Downloader extends EventEmitter {
 
         const controller = new AbortController()
 
-        const requestOptions: https.RequestOptions = {
+        const requestOptions: RequestOptions = {
             timeout: this.#timeout,
             signal: controller.signal,
             headers: {
